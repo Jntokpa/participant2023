@@ -50,6 +50,7 @@
             </div>
             <div class="form-floating mb-3">
                 <button type="submit" class="btn btn-outline-danger" name="valider">ENREGISTRER</button>
+                <button type="reset" class="btn btn-light" name="annuler">ANNULER</button>
             </div>
         </div>
     </form>
