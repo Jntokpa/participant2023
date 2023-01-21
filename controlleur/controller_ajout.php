@@ -1,8 +1,8 @@
 <?php
 if (isset($_POST['valider'])) {
     if (!empty($_POST['nom']) and !empty($_POST['prenom']) and !empty($_POST['telephone']) and !empty($_POST['email'])) {
-        $nom = htmlspecialchars($_POST['nom']);
-        $prenom = htmlspecialchars($_POST['prenom']);
+        $nom = htmlspecialchars(strtoUpper($_POST['nom']));
+        $prenom = htmlspecialchars(strtoUpper($_POST['prenom']));
         $telephone = htmlspecialchars($_POST['telephone']);
         $email = htmlspecialchars($_POST['email']);
 
