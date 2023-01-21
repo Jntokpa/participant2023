@@ -8,7 +8,7 @@ try {
 
 //selection
 $select_email_participant = $bdd->prepare('SELECT * FROM participant WHERE email=?');
-$req_select_all_participants = 'SELECT * FROM participant ORDER BY nom';
+$req_select_all_participants = 'SELECT * FROM participant ORDER BY nom, prenom';
 
 //insertion
 $create_participant = $bdd->prepare('INSERT INTO participant (nom, prenom, telephone, email) VALUES (?, ?, ?, ?)');
